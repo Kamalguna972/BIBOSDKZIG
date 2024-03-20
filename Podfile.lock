@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (5.8.1)
+  - lottie-ios (4.4.0)
+  - MQTTClient (0.15.3):
+    - MQTTClient/Core (= 0.15.3)
+  - MQTTClient/Core (0.15.3):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.15.3):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.15.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - lottie-ios (~> 4.4)
+  - MQTTClient (~> 0.15)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - lottie-ios
+    - MQTTClient
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  lottie-ios: ef1be1f90d54255f08e09d767950e43714661178
+  MQTTClient: 0dfa04e789479c2e461786464969895c1fcb0875
+
+PODFILE CHECKSUM: e3970e392bf23c624845e7dcf9b4ade64a74cb86
+
+COCOAPODS: 1.15.2

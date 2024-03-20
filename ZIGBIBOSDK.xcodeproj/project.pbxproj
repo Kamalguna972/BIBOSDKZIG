@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D8E01CE9C410BCB7EB9F032 /* Pods_ZIGBIBOSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294C8EF1BB7DAAB081CB716F /* Pods_ZIGBIBOSDK.framework */; };
+		1814E4592BA83E7E00FBDE10 /* ZIGBIBOSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1814E4582BA83E7E00FBDE10 /* ZIGBIBOSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1873E3D02BA985FC00B0A1CE /* ZIGBIBOSDKTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 1873E3C42BA9849100B0A1CE /* ZIGBIBOSDKTests.xctest */; };
+		1873E3DA2BA989E800B0A1CE /* MQTTClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1873E3D12BA986F600B0A1CE /* MQTTClient.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		187D69FC2BA48C8F002B3F66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187D69FB2BA48C8F002B3F66 /* Assets.xcassets */; };
+		188CB55B2BAAA0E0001F5907 /* Pods_ZIGBIBOSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 188CB5592BAAA0E0001F5907 /* Pods_ZIGBIBOSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1892B3582BA805F30026EB7B /* StopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892B3572BA805F30026EB7B /* StopViewController.swift */; };
+		189402292BA40CD60096C6CE /* ZIGBIBOSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189402282BA40CD60096C6CE /* ZIGBIBOSDKTests.swift */; };
+		189402342BA40CF40096C6CE /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189402332BA40CF40096C6CE /* WelcomePage.swift */; };
+		1894025B2BA4118F0096C6CE /* customdialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894025A2BA4118F0096C6CE /* customdialog.swift */; };
+		189402752BA41EA20096C6CE /* presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189402742BA41EA20096C6CE /* presenter.swift */; };
+		189402A32BA42E240096C6CE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189402A22BA42E240096C6CE /* OnboardingViewController.swift */; };
+		189402AD2BA445F20096C6CE /* stopFeature.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189402AC2BA445F20096C6CE /* stopFeature.storyboard */; };
+		189402C72BA44CD40096C6CE /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189402C62BA44CD40096C6CE /* OnboardingViewController.storyboard */; };
+		189403172BA4732B0096C6CE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189403162BA4732B0096C6CE /* Model.swift */; };
+		978CDCECDDE75D9834CD3762 /* Pods_ZIGBIBOSDK_ZIGBIBOSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8151BB8CBC7DA5C4526399 /* Pods_ZIGBIBOSDK_ZIGBIBOSDKTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		189402252BA40CD60096C6CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189402122BA40CD60096C6CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1894021A2BA40CD60096C6CE;
+			remoteInfo = ZIGBIBOSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		188CB55C2BAAA0E0001F5907 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				188CB55B2BAAA0E0001F5907 /* Pods_ZIGBIBOSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1814E4582BA83E7E00FBDE10 /* ZIGBIBOSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIGBIBOSDK.h; sourceTree = "<group>"; };
+		1814E4852BA865E300FBDE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1873E3BE2BA9834000B0A1CE /* ZIGBIBOSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZIGBIBOSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1873E3C42BA9849100B0A1CE /* ZIGBIBOSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZIGBIBOSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1873E3D12BA986F600B0A1CE /* MQTTClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MQTTClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		187D69FB2BA48C8F002B3F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		188CB5592BAAA0E0001F5907 /* Pods_ZIGBIBOSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZIGBIBOSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1892B3572BA805F30026EB7B /* StopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopViewController.swift; sourceTree = "<group>"; };
+		189402282BA40CD60096C6CE /* ZIGBIBOSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIGBIBOSDKTests.swift; sourceTree = "<group>"; };
+		189402332BA40CF40096C6CE /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
+		1894025A2BA4118F0096C6CE /* customdialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customdialog.swift; sourceTree = "<group>"; };
+		189402742BA41EA20096C6CE /* presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presenter.swift; sourceTree = "<group>"; };
+		189402A22BA42E240096C6CE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		189402AC2BA445F20096C6CE /* stopFeature.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = stopFeature.storyboard; sourceTree = "<group>"; };
+		189402C62BA44CD40096C6CE /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
+		189403162BA4732B0096C6CE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		294C8EF1BB7DAAB081CB716F /* Pods_ZIGBIBOSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZIGBIBOSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8151BB8CBC7DA5C4526399 /* Pods_ZIGBIBOSDK_ZIGBIBOSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZIGBIBOSDK_ZIGBIBOSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58CB49206420288D99FF02E4 /* Pods-ZIGBIBOSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZIGBIBOSDK.release.xcconfig"; path = "Target Support Files/Pods-ZIGBIBOSDK/Pods-ZIGBIBOSDK.release.xcconfig"; sourceTree = "<group>"; };
+		5A81105383A767C5DE5CF169 /* Pods-ZIGBIBOSDK-ZIGBIBOSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZIGBIBOSDK-ZIGBIBOSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-ZIGBIBOSDK-ZIGBIBOSDKTests/Pods-ZIGBIBOSDK-ZIGBIBOSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0FE520A941A4971B6A6ABD6 /* Pods-ZIGBIBOSDK-ZIGBIBOSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZIGBIBOSDK-ZIGBIBOSDKTests.release.xcconfig"; path = "Target Support Files/Pods-ZIGBIBOSDK-ZIGBIBOSDKTests/Pods-ZIGBIBOSDK-ZIGBIBOSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8C7BF81978B9879263327C2 /* Pods-ZIGBIBOSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZIGBIBOSDK.debug.xcconfig"; path = "Target Support Files/Pods-ZIGBIBOSDK/Pods-ZIGBIBOSDK.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		189402182BA40CD60096C6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8E01CE9C410BCB7EB9F032 /* Pods_ZIGBIBOSDK.framework in Frameworks */,
+				1873E3DA2BA989E800B0A1CE /* MQTTClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189402202BA40CD60096C6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978CDCECDDE75D9834CD3762 /* Pods_ZIGBIBOSDK_ZIGBIBOSDKTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		189402112BA40CD60096C6CE = {
+			isa = PBXGroup;
+			children = (
+				1894021D2BA40CD60096C6CE /* ZIGBIBOSDK */,
+				189402272BA40CD60096C6CE /* ZIGBIBOSDKTests */,
+				1873E3BE2BA9834000B0A1CE /* ZIGBIBOSDK.framework */,
+				1CF282CDCE1548FA01C683E8 /* Pods */,
+				3829EB095A77531972162062 /* Frameworks */,
+				1873E3C42BA9849100B0A1CE /* ZIGBIBOSDKTests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		1894021D2BA40CD60096C6CE /* ZIGBIBOSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1814E4852BA865E300FBDE10 /* Info.plist */,
+				1814E4582BA83E7E00FBDE10 /* ZIGBIBOSDK.h */,
+				189402AC2BA445F20096C6CE /* stopFeature.storyboard */,
+				189402C62BA44CD40096C6CE /* OnboardingViewController.storyboard */,
+				189402332BA40CF40096C6CE /* WelcomePage.swift */,
+				1894025A2BA4118F0096C6CE /* customdialog.swift */,
+				189402742BA41EA20096C6CE /* presenter.swift */,
+				189402A22BA42E240096C6CE /* OnboardingViewController.swift */,
+				1892B3572BA805F30026EB7B /* StopViewController.swift */,
+				189403162BA4732B0096C6CE /* Model.swift */,
+				187D69FB2BA48C8F002B3F66 /* Assets.xcassets */,
+			);
+			path = ZIGBIBOSDK;
+			sourceTree = "<group>";
+		};
+		189402272BA40CD60096C6CE /* ZIGBIBOSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				189402282BA40CD60096C6CE /* ZIGBIBOSDKTests.swift */,
+			);
+			path = ZIGBIBOSDKTests;
+			sourceTree = "<group>";
+		};
+		1CF282CDCE1548FA01C683E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8C7BF81978B9879263327C2 /* Pods-ZIGBIBOSDK.debug.xcconfig */,
+				58CB49206420288D99FF02E4 /* Pods-ZIGBIBOSDK.release.xcconfig */,
+				5A81105383A767C5DE5CF169 /* Pods-ZIGBIBOSDK-ZIGBIBOSDKTests.debug.xcconfig */,
+				D0FE520A941A4971B6A6ABD6 /* Pods-ZIGBIBOSDK-ZIGBIBOSDKTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3829EB095A77531972162062 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				188CB5592BAAA0E0001F5907 /* Pods_ZIGBIBOSDK.framework */,
+				1873E3D12BA986F600B0A1CE /* MQTTClient.framework */,
+				294C8EF1BB7DAAB081CB716F /* Pods_ZIGBIBOSDK.framework */,
+				4F8151BB8CBC7DA5C4526399 /* Pods_ZIGBIBOSDK_ZIGBIBOSDKTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		189402162BA40CD60096C6CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1814E4592BA83E7E00FBDE10 /* ZIGBIBOSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1894021A2BA40CD60096C6CE /* ZIGBIBOSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1894022D2BA40CD60096C6CE /* Build configuration list for PBXNativeTarget "ZIGBIBOSDK" */;
+			buildPhases = (
+				FD45BFB36F1A06239C73EFD9 /* [CP] Check Pods Manifest.lock */,
+				189402162BA40CD60096C6CE /* Headers */,
+				189402172BA40CD60096C6CE /* Sources */,
+				189402182BA40CD60096C6CE /* Frameworks */,
+				189402192BA40CD60096C6CE /* Resources */,
+				188CB55C2BAAA0E0001F5907 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZIGBIBOSDK;
+			productName = ZIGBIBOSDK;
+			productReference = 1873E3BE2BA9834000B0A1CE /* ZIGBIBOSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		189402222BA40CD60096C6CE /* ZIGBIBOSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189402302BA40CD60096C6CE /* Build configuration list for PBXNativeTarget "ZIGBIBOSDKTests" */;
+			buildPhases = (
+				22F83CF80779E6219A0B6EED /* [CP] Check Pods Manifest.lock */,
+				1894021F2BA40CD60096C6CE /* Sources */,
+				189402202BA40CD60096C6CE /* Frameworks */,
+				189402212BA40CD60096C6CE /* Resources */,
+				A36C9EF74FCC65D10BACDE03 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				189402262BA40CD60096C6CE /* PBXTargetDependency */,
+			);
+			name = ZIGBIBOSDKTests;
+			productName = ZIGBIBOSDKTests;
+			productReference = 1873E3C42BA9849100B0A1CE /* ZIGBIBOSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		189402122BA40CD60096C6CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1894021A2BA40CD60096C6CE = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					189402222BA40CD60096C6CE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 189402152BA40CD60096C6CE /* Build configuration list for PBXProject "ZIGBIBOSDK" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 189402112BA40CD60096C6CE;
+			productRefGroup = 189402112BA40CD60096C6CE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1894021A2BA40CD60096C6CE /* ZIGBIBOSDK */,
+				189402222BA40CD60096C6CE /* ZIGBIBOSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		189402192BA40CD60096C6CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189402C72BA44CD40096C6CE /* OnboardingViewController.storyboard in Resources */,
+				187D69FC2BA48C8F002B3F66 /* Assets.xcassets in Resources */,
+				189402AD2BA445F20096C6CE /* stopFeature.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189402212BA40CD60096C6CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1873E3D02BA985FC00B0A1CE /* ZIGBIBOSDKTests.xctest in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22F83CF80779E6219A0B6EED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZIGBIBOSDK-ZIGBIBOSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A36C9EF74FCC65D10BACDE03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZIGBIBOSDK-ZIGBIBOSDKTests/Pods-ZIGBIBOSDK-ZIGBIBOSDKTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZIGBIBOSDK-ZIGBIBOSDKTests/Pods-ZIGBIBOSDK-ZIGBIBOSDKTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZIGBIBOSDK-ZIGBIBOSDKTests/Pods-ZIGBIBOSDK-ZIGBIBOSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD45BFB36F1A06239C73EFD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZIGBIBOSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		189402172BA40CD60096C6CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1892B3582BA805F30026EB7B /* StopViewController.swift in Sources */,
+				189403172BA4732B0096C6CE /* Model.swift in Sources */,
+				189402752BA41EA20096C6CE /* presenter.swift in Sources */,
+				189402A32BA42E240096C6CE /* OnboardingViewController.swift in Sources */,
+				1894025B2BA4118F0096C6CE /* customdialog.swift in Sources */,
+				189402342BA40CF40096C6CE /* WelcomePage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1894021F2BA40CD60096C6CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189402292BA40CD60096C6CE /* ZIGBIBOSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		189402262BA40CD60096C6CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1894021A2BA40CD60096C6CE /* ZIGBIBOSDK */;
+			targetProxy = 189402252BA40CD60096C6CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1894022B2BA40CD60096C6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1894022C2BA40CD60096C6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1894022E2BA40CD60096C6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C7BF81978B9879263327C2 /* Pods-ZIGBIBOSDK.debug.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = S593B262J6;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MQTTClient\"/**",
+					"$(BUILD_PRODUCTS_DIR)/MQTTClient/**",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MQTTClient/MQTTClient.framework/Headers\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"/**",
+				);
+				INFOPLIST_FILE = ZIGBIBOSDK/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location will be used to display nearby transportation options.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Your location will be used to display nearby transportation options.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_DYLIB_INSTALL_NAME = "@rpath/MQTTClient.framework/MQTTClient";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "@executable_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Gunadharshini.ZIGBIBOSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1894022F2BA40CD60096C6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CB49206420288D99FF02E4 /* Pods-ZIGBIBOSDK.release.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = S593B262J6;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MQTTClient\"/**",
+					"$(BUILD_PRODUCTS_DIR)/MQTTClient/**",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MQTTClient/MQTTClient.framework/Headers\"/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"/**",
+				);
+				INFOPLIST_FILE = ZIGBIBOSDK/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location will be used to display nearby transportation options.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Your location will be used to display nearby transportation options.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_DYLIB_INSTALL_NAME = "@rpath/MQTTClient.framework/MQTTClient";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "@executable_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Gunadharshini.ZIGBIBOSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		189402312BA40CD60096C6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A81105383A767C5DE5CF169 /* Pods-ZIGBIBOSDK-ZIGBIBOSDKTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S593B262J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gunadharshini.ZIGBIBOSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		189402322BA40CD60096C6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0FE520A941A4971B6A6ABD6 /* Pods-ZIGBIBOSDK-ZIGBIBOSDKTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S593B262J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gunadharshini.ZIGBIBOSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		189402152BA40CD60096C6CE /* Build configuration list for PBXProject "ZIGBIBOSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1894022B2BA40CD60096C6CE /* Debug */,
+				1894022C2BA40CD60096C6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1894022D2BA40CD60096C6CE /* Build configuration list for PBXNativeTarget "ZIGBIBOSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1894022E2BA40CD60096C6CE /* Debug */,
+				1894022F2BA40CD60096C6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189402302BA40CD60096C6CE /* Build configuration list for PBXNativeTarget "ZIGBIBOSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189402312BA40CD60096C6CE /* Debug */,
+				189402322BA40CD60096C6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 189402122BA40CD60096C6CE /* Project object */;
+}

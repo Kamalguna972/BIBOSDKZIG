@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stop View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="StopViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="StopViewController" customModule="ZIGBIBOSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STOP Request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="237-DZ-Awf">
+                                <rect key="frame" x="40" y="119" width="313" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Kab-X0-osl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Stop request has been delivered to the driver" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC2-sU-4is">
+                                <rect key="frame" x="40" y="179" width="313" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ADn-Kg-fK2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjp-XY-vnp">
+                                <rect key="frame" x="95" y="282" width="202" height="170.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StopRequest" translatesAutoresizingMaskIntoConstraints="NO" id="Rgo-e3-Pka">
+                                        <rect key="frame" x="0.0" y="0.0" width="202" height="170.66666666666666"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Rgo-e3-Pka" firstAttribute="leading" secondItem="Hjp-XY-vnp" secondAttribute="leading" id="TKe-Kr-2Ko"/>
+                                    <constraint firstItem="Rgo-e3-Pka" firstAttribute="top" secondItem="Hjp-XY-vnp" secondAttribute="top" id="Tuh-Y0-Xks"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rgo-e3-Pka" secondAttribute="bottom" id="n7j-Fg-dwy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rgo-e3-Pka" secondAttribute="trailing" id="sYW-IT-zD2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="ripple"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Current_Location" translatesAutoresizingMaskIntoConstraints="NO" id="R5x-yI-YO2">
+                                <rect key="frame" x="40" y="625" width="50" height="45"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="cA9-Rt-iAc"/>
+                                    <constraint firstAttribute="width" constant="50" id="xIO-sO-VxZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is current loction it was very good position to working" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ol5-hE-jgJ">
+                                <rect key="frame" x="110" y="497" width="243" height="301"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Tsu-H1-vRf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="Ol5-hE-jgJ" firstAttribute="centerY" secondItem="R5x-yI-YO2" secondAttribute="centerY" id="0UW-IF-sy8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ol5-hE-jgJ" secondAttribute="trailing" constant="40" id="1Aq-Xr-ceY"/>
+                            <constraint firstItem="uC2-sU-4is" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="DBY-BO-oyx"/>
+                            <constraint firstItem="237-DZ-Awf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="Evz-pw-Ns0"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Hjp-XY-vnp" secondAttribute="bottom" constant="365.32999999999998" id="G7C-KX-EnQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uC2-sU-4is" secondAttribute="trailing" constant="40" id="HJw-HB-rvF"/>
+                            <constraint firstItem="Hjp-XY-vnp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="95" id="Jp1-le-VcO"/>
+                            <constraint firstItem="uC2-sU-4is" firstAttribute="top" secondItem="237-DZ-Awf" secondAttribute="bottom" constant="20" id="LjB-vf-l8E"/>
+                            <constraint firstItem="R5x-yI-YO2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Pmt-dN-T2x"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="R5x-yI-YO2" secondAttribute="bottom" constant="148" id="RNq-cS-VB0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Hjp-XY-vnp" secondAttribute="trailing" constant="96" id="egB-TN-PTX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="237-DZ-Awf" secondAttribute="trailing" constant="40" id="lg1-e3-cq0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Ol5-hE-jgJ" secondAttribute="bottom" constant="20" id="mX5-8D-neM"/>
+                            <constraint firstItem="237-DZ-Awf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="ndY-lr-ygv"/>
+                            <constraint firstItem="Hjp-XY-vnp" firstAttribute="top" secondItem="uC2-sU-4is" secondAttribute="bottom" constant="60" id="rQ8-9e-G3N"/>
+                            <constraint firstItem="Ol5-hE-jgJ" firstAttribute="leading" secondItem="R5x-yI-YO2" secondAttribute="trailing" constant="20" id="zMt-81-WLb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Current_location" destination="Ol5-hE-jgJ" id="jl2-i0-KkT"/>
+                        <outlet property="Current_location_img" destination="R5x-yI-YO2" id="OFe-VS-TBE"/>
+                        <outlet property="Stop_img" destination="Rgo-e3-Pka" id="9Gh-NB-aaW"/>
+                        <outlet property="SubTitle_name" destination="uC2-sU-4is" id="ZPr-2j-A1Q"/>
+                        <outlet property="Title_name" destination="237-DZ-Awf" id="DRd-43-5em"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Current_Location" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="StopRequest" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
