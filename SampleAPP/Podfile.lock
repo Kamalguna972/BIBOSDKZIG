@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (5.8.1)
+  - BIBOSDKZIG (1.0.0):
+    - Alamofire (~> 5.0)
+
+DEPENDENCIES:
+  - BIBOSDKZIG (from `../ZIGBIBOSDK`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  BIBOSDKZIG:
+    :path: "../ZIGBIBOSDK"
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  BIBOSDKZIG: fbb3588cb8ea7355c81cfd5c69290b6b676f5f35
+
+PODFILE CHECKSUM: 358c8adaff13a4e2d5ccad3c13104c89d4c0a285
+
+COCOAPODS: 1.15.2
