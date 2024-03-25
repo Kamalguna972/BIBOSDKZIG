@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "13.0" # Adjusted deployment target
   spec.source       = { :git => "https://github.com/Kamalguna972/BIBOSDKZIG.git", :tag => spec.version.to_s  }
   spec.source_files = "ZIGBIBOSDK/**/*.swift" # Adjusted source files pattern
-  
+  spec.vendored_frameworks          = "BIBOSDKZIG.xcframework/ios-arm64/iOS_SDK.framework"
   spec.swift_versions = "5.0" # Specified Swift version
   
   spec.dependency 'Alamofire', '~> 5.0' # Adjusted Alamofire version
